@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**body{
+    background: ;
+    font-family: 'Courier Prime', monospace;
+    color: var(--ink);
+    overflow-x: hidden;
+}
+    **/
+
+#intro{
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    color: aliceblue;
+}
+
+.case-badge{
+    width: 120px;
+    height: 120px;
+    border: 3px solid #c0392b;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c0392b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: pulse 2s ease-in-out infinite;
+    position: relative;
+
+}
+
+.case-badge::before{
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border: 1px solid rgba(192, 57, 43, 0.5);
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0%,
+    100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+    }
+}
+
+.intro-title{
+    font-family: 'Oswald', sans-serif;
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro-tagline{
+    font-family: 'Special Elite', cursive;
+    color: #c0392b;
+    font-size: 22px;
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.4;
+}
+
+#typewriter{
+    font-family: 'Courier Prime', monospace;
+    color: #4a4a4a;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    min-height: 20px;
+}
+
+#typewriter .cursor{
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink { 50% {opacity: 0;}}
+
+#open-file-btn{
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid #c0392b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #c0392b;
+}
+
+#open-file-btn:hover{
+    background: #c0392b;
+    color: #0a0a0a;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/**#main h1{
+    font-family: 'Oswald', sans-serif;
+    color: #c0392b;
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+**/
+#case-info{
+    border: 1px solid red;
+    display: flex;
+    padding: 30px;
+    min-height: 300px;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.subject-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subject-info .c-number{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+#main .subject-info .name{
+    font-family: 'Special Elite';
+    color: #c0392b;
+    font-size: 40px;
+
+}
+
+.subject-info .alias{
+    font-family: 'Special Elite', cursive;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.subject-info h2{
+    font-family: 'Special Elite', cursive;
+}
+
+
+
